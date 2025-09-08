@@ -3,14 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AiBridge Ltd - AI at Your Hands</title>
+  <title>AiBridge LTD - AI at Your Hands</title>
+  <meta name="description" content="AiBridge LTD delivers AI consulting, custom software, and automation solutions to help businesses scale with intelligence.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="favicon.png" />
+
+  <!-- Fonts & CSS -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+
+  <style>
+    html { scroll-behavior: smooth; }
+    .hero .overlay {
+      background: rgba(0,0,0,0.55);
+      padding: 2rem;
+      border-radius: 10px;
+    }
+    .extra-text {
+      max-width: 1100px;
+      margin: auto;
+      padding: 3rem 2rem;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: #333;
+    }
+    .extra-text h2 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #1c2541;
+    }
+    .extra-text ul {
+      margin: 1rem 0 2rem 1.5rem;
+    }
+  </style>
 </head>
 <body>
   <!-- Header -->
   <header>
-    <div class="logo">AiBridge Ltd</div>
+    <div class="logo">AiBridge LTD</div>
     <nav>
       <a href="#services">Services</a>
       <a href="#about">About</a>
@@ -19,10 +51,12 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <h1>AI at Your Hands</h1>
-    <p>We bridge Artificial Intelligence, Software, and Real Estate to deliver results you can touch.</p>
-    <a href="#contact" class="btn">Get in Touch</a>
+  <section class="hero" style="background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&q=80&w=1600&auto=format&fit=crop') center/cover no-repeat; color: #fff;">
+    <div class="overlay">
+      <h1>AI at Your Hands</h1>
+      <p>We bring the power of Artificial Intelligence to your business with practical, scalable solutions.</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
   </section>
 
   <!-- Services -->
@@ -30,16 +64,19 @@
     <h2>Our Services</h2>
     <div class="cards">
       <div class="card">
+        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="AI Consulting illustration" />
         <h3>AI Consulting</h3>
-        <p>From strategy to custom model implementation, we help businesses leverage AI.</p>
+        <p>From strategy to implementation, we guide companies in leveraging AI for growth.</p>
       </div>
       <div class="card">
-        <h3>Software Development</h3>
-        <p>Building scalable, tailored solutions that empower your business.</p>
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Custom Software Development" />
+        <h3>Custom Software</h3>
+        <p>We build intelligent applications that fit your business needs and scale with you.</p>
       </div>
       <div class="card">
-        <h3>Real Estate Tech</h3>
-        <p>Data-driven insights and tools that transform property investments.</p>
+        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Automation concept" />
+        <h3>Automation Solutions</h3>
+        <p>Boost efficiency with AI-powered automation and smart workflows.</p>
       </div>
     </div>
   </section>
@@ -47,20 +84,36 @@
   <!-- About -->
   <section id="about">
     <h2>About Us</h2>
-    <p>AiBridge Ltd is a Cyprus-based company connecting AI, software, and real estate innovation. 
-       With experience across global industries and partners such as Sony, we deliver 
-       practical solutions with measurable impact.</p>
+    <p>AiBridge LTD is a Cyprus-based company specializing in AI consulting, custom software, and automation. 
+       With global clients across industries, we transform ideas into intelligent solutions that create measurable impact.</p>
   </section>
 
   <!-- Contact -->
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:contact@aibridge.ltd">contact@aibridge.ltd</a></p>
+    <p>Email: <a href="mailto:info@aibridge.ltd">info@aibridge.ltd</a></p>
+  </section>
+
+  <!-- Extra SEO/Content Section -->
+  <section class="extra-text">
+    <h2>Why Choose AiBridge LTD?</h2>
+    <p>We believe Artificial Intelligence should not be reserved for big corporations only. At AiBridge, our mission is to put 
+       <strong>AI at your hands</strong> — making cutting-edge technology practical, affordable, and effective for businesses of every size.</p>
+    
+    <ul>
+      <li><strong>Proven Expertise:</strong> Our team has delivered AI and software solutions across multiple industries worldwide.</li>
+      <li><strong>Tailored Strategies:</strong> We adapt every project to your unique goals and challenges, not just generic models.</li>
+      <li><strong>Scalable Innovation:</strong> From startups to enterprises, our solutions grow with your business.</li>
+      <li><strong>Global Reach:</strong> Based in Cyprus, trusted internationally, we work with clients across Europe, North America, and beyond.</li>
+    </ul>
+
+    <p>Whether you are looking to automate workflows, enhance customer experiences, or build smarter tools, AiBridge LTD will help you 
+       navigate the evolving world of Artificial Intelligence. Together, we create technology that empowers people, not replaces them.</p>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© <span id="year"></span> AiBridge Ltd — AI at Your Hands</p>
+    <p>© <span id="year"></span> AiBridge LTD — AI at Your Hands</p>
   </footer>
 
   <!-- Script for dynamic year -->
