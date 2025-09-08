@@ -3,7 +3,13 @@ body {
     margin: 0;
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    background: #f9f9fb;
+    background: radial-gradient(circle at 15% 20%, #ff006e 0%, transparent 35%),
+                radial-gradient(circle at 85% 25%, #3a86ff 0%, transparent 35%),
+                radial-gradient(circle at 25% 85%, #ffbe0b 0%, transparent 35%),
+                radial-gradient(circle at 75% 75%, #8338ec 0%, transparent 35%),
+                radial-gradient(circle at 50% 50%, #fb5607 0%, transparent 45%),
+                #f9f9fb;
+    background-attachment: fixed;
     color: #222;
   }
   
@@ -34,7 +40,7 @@ body {
   }
   
   header a:hover {
-    color: #5bc0be;
+    color: #ffbe0b;
   }
   
   /* Hero Section */
@@ -44,7 +50,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(120deg, #1c2541, #3a506b);
+    background: rgba(0,0,0,0.5); /* overlay ensures readability */
     color: #fff;
     text-align: center;
     padding: 2rem;
@@ -63,7 +69,7 @@ body {
   .hero .btn {
     margin-top: 2rem;
     padding: 0.8rem 1.5rem;
-    background: #5bc0be;
+    background: #ff006e;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -72,7 +78,7 @@ body {
   }
   
   .hero .btn:hover {
-    background: #3aafa9;
+    background: #fb5607;
   }
   
   /* Sections */
@@ -103,7 +109,7 @@ body {
     background: #fff;
     padding: 1.5rem;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
     min-width: 280px;
     max-width: 340px;
     text-align: center;
@@ -112,7 +118,7 @@ body {
   
   .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.2);
   }
   
   .card img {
@@ -136,13 +142,14 @@ body {
   }
   
   #contact a {
-    color: #3a506b;
+    color: #3a86ff;
     text-decoration: none;
     font-weight: bold;
   }
   
   #contact a:hover {
     text-decoration: underline;
+    color: #ff006e;
   }
   
   /* Footer */
