@@ -13,17 +13,31 @@ body {
     color: #222;
   }
   
-  /* Header */
+  /* Header with tie-dye gradient */
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background: #0b132b;
+    background: linear-gradient(90deg,
+                #ff006e,
+                #fb5607,
+                #ffbe0b,
+                #3a86ff,
+                #8338ec);
+    background-size: 400% 400%;
+    animation: gradientMove 12s ease infinite;
     color: #fff;
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  }
+  
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
   }
   
   header .logo {
